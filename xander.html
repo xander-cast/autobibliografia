@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biografía de Alexander Castrellon</title>
+
+    <!-- Fuentes de Google Fonts (solo ejemplo, puedes cambiar) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ---------- RESET BÁSICO ---------- */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ---------- ESTILOS GENERALES ---------- */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* ---------- CABECERA ---------- */
+        header {
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: .5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: .9;
+        }
+
+        /* ---------- MAQUETACIÓN PRINCIPAL ---------- */
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            /* columna principal + aside */
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                /* una sola columna en móvil */
+            }
+        }
+
+        /* ---------- IMAGEN DE PERFIL ---------- */
+        .profile-img {
+            width: 75%;
+            border-radius: .75rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
+            margin-bottom: 2rem;
+        }
+
+        /* ---------- SECCIONES DE BIOGRAFÍA ---------- */
+        .biography section {
+            margin-bottom: 2rem;
+        }
+
+        .biography h2 {
+            font-size: 1.5rem;
+            margin-bottom: .75rem;
+            color: #003366;
+            border-left: 4px solid #003366;
+            padding-left: .5rem;
+        }
+
+        /* ---------- LÍNEA DE TIEMPO ---------- */
+        .timeline {
+            list-style: none;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #003366;
+        }
+
+        .timeline li {
+            position: relative;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline li::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid #003366;
+        }
+
+        /* ---------- ASIDE (DATOS RÁPIDOS) ---------- */
+        aside {
+            background: #fff;
+            border-radius: .75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+            height: fit-content;
+        }
+
+        aside h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #003366;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside li {
+            margin-bottom: .75rem;
+        }
+
+        /* ---------- PIE DE PÁGINA ---------- */
+        footer {
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: .9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ========== ENCABEZADO ========== -->
+    <header>
+        <h1>Alexander Castrellon</h1>
+    </header>
+
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <div class="container">
+
+        <!-- ---------- COLUMNA IZQUIERDA (BIOGRAFÍA) ---------- -->
+        <main class="biography">
+            <!-- Imagen principal (cambia la ruta a tu archivo) -->
+            <img src="castre.mvp.jpg" width="150%" alt="Retrato de Alexander Castrellon" class="profile-img">
+
+            <!-- Introducción -->
+            <section id="introduccion">
+                <h2>Introducción</h2>
+                <p> Alexander Andres Castrellon (tambien conocido como castre) nacido en Panama, en el distrito de San
+                    miguelito,
+                    estudiante del Instituto Profesional y Tecnico Don Bosco, tomo el bachiller de informatica una de
+                    los mas prestigiosos bachilleres, estando en 5º año de secundaria.
+                </p>
+
+            </section>
+
+            <!-- Pasatiempos -->
+            <section id="timeline">
+                <h2>Pasatiempos</h2>
+                <ul class="timeline">
+                    <li><strong></strong> aprendizaje favorito es el ukulele </li>
+                    <li><strong></strong> escuchar todo tipo de musica menos chacaleria</li>
+                    <li><strong></strong> jugador amateur de futbol</li>
+                    <li><strong></strong> tocar piano en sus tiempo libre</li>
+                    <li><strong></strong> creyente de Dios en la religion cristiana o catolica</li>
+                    <li><strong></strong> salidas al cine solo o acompañado</li>
+                </ul>
+            </section>
+
+            <!-- Legado -->
+            <section id="legado">
+                <h2>Metas por lograr</h2>
+                <p>
+                    el poder viajar hacia la isla maldivas y conocido como el mar de estrellas
+                    pronto al graduarme agarrar ingeniera en mecatronica de Canada
+                    poder comprarle una muy buena casa a mis padres y que no se tengan que preocupar por el dinero
+                    mi meta principal por ahora es graduarme de la secundaria y poder llegar a la universidad
+                    poque para poder completar una meta tienes que terminar otra y abrir esa puerta
+                    mi frase favorita "sir parvis magna" la grandeza comienza de pequeños comienzos.
+                </p>
+            </section>
+        </main>
+
+        <!-- ---------- COLUMNA DERECHA (ASIDE) ---------- -->
+        <aside>
+            <h3>Datos rápidos</h3>
+            <ul>
+                <li><strong>Nombre completo:</strong> Alexander Andres Castrellon Restrepo </li>
+                <li><strong>Nacimiento:</strong> 14 de abril de 2009, San Miguelito, Panama </li>
+                <li><strong>padre</strong> Samuel Castrellon</li>
+                <li><strong>Madre</strong> Erica Restrepo</li>
+                <li><strong>Ocupación:</strong> estudiante</li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <footer>
+        © 2025 Alexander Castrellon – Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
